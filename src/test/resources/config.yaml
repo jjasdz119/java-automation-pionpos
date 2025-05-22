@@ -1,0 +1,13 @@
+pages:
+  loginPage: https://monkiorders.us/dashboard/login
+  mainPage: https://monkiorders.us/dashboard/
+
+users:
+  valid:
+    email: dsmqa03@yopmail.com
+    password: 12e12e
+  invalid:
+    - email: null
+      password: null
+    - email: 123
+      password: 123
