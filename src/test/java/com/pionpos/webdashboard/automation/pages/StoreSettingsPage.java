@@ -3,8 +3,6 @@ package com.pionpos.webdashboard.automation.pages;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 
-import java.util.List;
-
 import static com.codeborne.selenide.Condition.empty;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -146,21 +144,21 @@ public class StoreSettingsPage {
 
     public static class Actions {
         public static void checkRequiredStoreInfo() {
-            StoreSettingsPage.fieldStoreName().shouldNotBe(empty);
+            fieldStoreName().shouldNotBe(empty);
             System.out.println("Store Name: " + StoreSettingsPage.fieldStoreName().getValue());
-            StoreSettingsPage.fieldBranchName().shouldNotBe(empty);
+            fieldBranchName().shouldNotBe(empty);
             System.out.println("Branch Name: " + StoreSettingsPage.fieldBranchName().getValue());
-            StoreSettingsPage.fieldOwnerName().shouldNotBe(empty);
+            fieldOwnerName().shouldNotBe(empty);
             System.out.println("Owner Name: " + StoreSettingsPage.fieldOwnerName().getValue());
-            StoreSettingsPage.fieldAddress().shouldNotBe(empty);
+            fieldAddress().shouldNotBe(empty);
             System.out.println("Address: " + StoreSettingsPage.fieldAddress().getValue());
-            StoreSettingsPage.fieldCity().shouldNotBe(empty);
+            fieldCity().shouldNotBe(empty);
             System.out.println("City: " + StoreSettingsPage.fieldCity().getValue());
-            StoreSettingsPage.fieldState().shouldNotBe(empty);
+            fieldState().shouldNotBe(empty);
             System.out.println("State: " + StoreSettingsPage.fieldState().getValue());
-            StoreSettingsPage.fieldZip().shouldNotBe(empty);
+            fieldZip().shouldNotBe(empty);
             System.out.println("Zipcode: " + StoreSettingsPage.fieldZip().getValue());
-            StoreSettingsPage.fieldPhone().shouldNotBe(empty);
+            fieldPhone().shouldNotBe(empty);
             System.out.println("Phone Number: " + StoreSettingsPage.fieldPhone().getValue());
         }
     }
