@@ -1,6 +1,7 @@
 pages:
   loginPage: https://monkiorders.us/dashboard/login
   mainPage: https://monkiorders.us/dashboard/
+  storeSettingsPage: https://monkiorders.us/dashboard/settings/store-settings
 
 users:
   valid:
